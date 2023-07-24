@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!----hero section start---->
+   <div class="hero">
+    <nav>
+        <img src="A.png" alt="A">
+        <ul>
+            <li><a href="#hero">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <h1>Hi, I'm <span>Abdirahman</span><br></h1>
+    </div>
+   </div> 
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="abdi.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eaque
+                 consequatur laudantium corporis? Soluta distinctio dolore eius natus quod 
+                 tempora nobis voluptatem temporibus, animi porro praesentium placeat saepe corrupti
+                  quas.</p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UL?</span><br>Designing web/app interfaces</li>
+                        <li><span>web development</span><br> web/app interfaces</li>
+                        <li><span>app development</span><br>building android/ios apps</li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UL?</span><br>Designing web/app interfaces</li>
+                        <li><span>web development</span><br> web/app interfaces</li>
+                        <li><span>app development</span><br>building android/ios apps</li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UL?</span><br>Designing web/app interfaces</li>
+                        <li><span>web development</span><br> web/app interfaces</li>
+                        <li><span>app development</span><br>building android/ios apps</li>
+                    </ul>
+
+                  </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- ---------portfolio-------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work.png">
+                <div class="layer">
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -----contact--------- -->
+   <div id="contact">
+    
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>copyright Abdirahman. made with <i class="fa-solid fa-heart"></i></p>
+
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+     var tablinks = document.getElementsByName("tab-links");
+     var tabcontents = document.getElementsByName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+     }
+   </script>
+    
+</body>
+</html>
